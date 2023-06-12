@@ -21,24 +21,24 @@
 		<h5>SignUp</h5>
 		<p>Have an account? <a href="../Loginpage/index.html">Login Now</a></p>
 		<div class="inputs">
-			<input type="text" placeholder="Name">
+			<input type="text" placeholder="First Name" id="Firstname" oninput="firstname()">
+			<input type="text" placeholder="Last Name" id="Lastname" oninput="lastname()">
 			<br>
-			<input type="text" placeholder="user name">
-			<input type="email" placeholder="Email Id">
+			<input type="text" placeholder="user name" id="username" oninput="checkusername()">
+			<input type="number" placeholder="Phone Number (Not including +91)" id="number" oninput="checknumber()">
 			<br>
-			<input type="number" placeholder="Phone Number">
+			<input type="number" placeholder="Amount (More than 500) in Rs" id="amount" oninput="checkMoney()">
 			<br>
-			<input type="number" placeholder="Amount (in Rs)">
-			<br>
-			<input type="password" placeholder="Password">
-			<input type="password" placeholder="Confirm Password">
+			<input type="password" placeholder="Password" id="pass" oninput="checkpass()">
+			<input type="password" placeholder="Confirm Password" id="con_pass" oninput="checkcon_pass()">
 		</div>
 
 			<br>
-			<button>SignUp</button>
+			<button onclick="signup()">SignUp</button>
 	</div>
 	
 </div>
   
 </body>
+<script src="main.js"></script>
 </html>

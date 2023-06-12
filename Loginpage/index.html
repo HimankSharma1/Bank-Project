@@ -13,7 +13,6 @@
 
 </head>
 <body>
-<!-- partial:index.partial.html -->
 <div class="box-form">
 	<div class="left">
 		<div class="overlay">
@@ -24,24 +23,23 @@
 		<h5>Login</h5>
 		<p>Don't have an account? <a href="../signuppage/index.html">Create Your Account</a> it takes less than a minute</p>
 		<div class="inputs">
-			<input type="text" placeholder="user name">
-			<br>
-			<input type="password" placeholder="password">
+			<input type="text" placeholder="user name" id="userid">
+			<input type="password" placeholder="password" id="pass">
 		</div>
 			
 			<br><br>
 			
 		<div class="-forget-password">
-				<!-- Angular -->
 			<p>forget password?</p>
 		</div>
 			
 			<br>
-			<button>Login</button>
+			<button onclick="signin()">Login</button>
 	</div>
 	
 </div>
-<!-- partial -->
+
   
 </body>
+<script src="main.js"></script>
 </html>
